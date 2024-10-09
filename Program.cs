@@ -1,8 +1,14 @@
+using SsttekAcademyBootcamp.Models.Repositories.Books;
+using SsttekAcademyBootcamp.Models.Services;
+using SsttekAcademyHomeWork.Models.Repositories.Books;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddScoped<IBookRepository, BookRepository>(); 
+builder.Services.AddScoped<IBookService, Bookservices>(); 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

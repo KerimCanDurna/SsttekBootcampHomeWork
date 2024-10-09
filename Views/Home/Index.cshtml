@@ -1,8 +1,16 @@
-﻿@{
+﻿@using Microsoft.Extensions.Caching
+@{
     ViewData["Title"] = "Home Page";
 }
+@* HTML+ CSS+ JavaScript +   Razor Engine => Razor Syntax *@
+
+
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">1. Ödev</h1>
+    <p>Kitaplara göz atmak için  <a asp-controller="Books" asp-action="Index">tıklayın</a>.</p>
 </div>
+
+
+
+<p> Current Date : @DateTime.Now</p>
