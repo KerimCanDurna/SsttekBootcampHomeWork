@@ -105,5 +105,30 @@ namespace SsttekAcademyHomeWork.Models.Repositories.Books
         }
 
         public Book GetBook(int id) => books.FirstOrDefault(b => b.Id.Equals(id));
+        public void AddBook(Book book)
+        {
+            book.Id = books.Max(b => b.Id) + 1;
+            books.Add(book);
+        }
+
+        public void UpdateBook(Book book)
+        {
+            var existingBook = GetBook(book.Id);
+            if (existingBook is not null)
+            {
+                existingBook.Title = book.Title;
+                existingBook.Author = book.Author;
+                existingBook.PublicationYear = book.PublicationYear;
+                existingBook.ISBN = book.ISBN;
+                existingBook.Genre = book.Genre;
+                existingBook.Publisher = book.Publisher;
+                existingBook.PageCount = book.PageCount;
+                existingBook.Language = book.Language;
+                existingBook.Summary = book.Summary;
+                existingBook.AvailableCopies = book.AvailableCopies;
+            }
+        }
+
+        public void DeleteBook(int id) => books.Remove(GetBook(id));
     }
 }

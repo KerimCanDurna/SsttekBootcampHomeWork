@@ -18,6 +18,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Code\BootcampHomeWork\SsttekBootcampHomeWork\SsttekBootcampHomeWork
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Code/BootcampHomeWork/SsttekBootcampHomeWork/SsttekBootcampHomeWork/Views/Books/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/BootcampHomeWork/SsttekBootcampHomeWork/SsttekBootcampHomeWork/Views/Books/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/BootcampHomeWork/SsttekBootcampHomeWork/SsttekBootcampHomeWork/Views/Books/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/BootcampHomeWork/SsttekBootcampHomeWork/SsttekBootcampHomeWork/Views/Books/UpdateBook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcVXBkYXRlQm9vay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Code/BootcampHomeWork/SsttekBootcampHomeWork/SsttekBootcampHomeWork/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

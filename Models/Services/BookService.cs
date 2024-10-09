@@ -14,5 +14,10 @@ namespace SsttekAcademyBootcamp.Models.Services
         {
             return bookRepository.GetBook(id);
         }
+        public void CreateBook(Book book) => bookRepository.AddBook(book);
+
+        public void UpdateBook(Book book) => bookRepository.UpdateBook(book);
+
+        public void DeleteBook(int id) => bookRepository.DeleteBook(id);
     }
 }

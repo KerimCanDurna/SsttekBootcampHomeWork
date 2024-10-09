@@ -1,11 +1,20 @@
+using FluentValidation.AspNetCore;
 using SsttekAcademyBootcamp.Models.Repositories.Books;
 using SsttekAcademyBootcamp.Models.Services;
 using SsttekAcademyHomeWork.Models.Repositories.Books;
+using SsttekBootcampHomeWork.Views.Books;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews()
+    .AddFluentValidation(fv => 
+    {
+        fv.RegisterValidatorsFromAssemblyContaining<Program>(); // Proje içindeki validatörleri otomatik kaydeder
+        fv.DisableDataAnnotationsValidation = true; // Varsayılan DataAnnotations validasyonunu kapatır
+    });
+
+builder.Services.AddAutoMapper(typeof(Program));
 
 builder.Services.AddScoped<IBookRepository, BookRepository>(); 
 builder.Services.AddScoped<IBookService, Bookservices>(); 

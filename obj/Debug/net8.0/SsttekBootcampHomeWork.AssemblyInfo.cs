@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SsttekBootcampHomeWork")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b451c4cd67569d27f0c6eaa11298798e5fa389d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("SsttekBootcampHomeWork")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SsttekBootcampHomeWork")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
